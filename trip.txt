@@ -1,0 +1,7 @@
+siem reab 
+[hotel info]
+131, 130 , phnompenh city
+check in 10:00am , date: 10/05/2021
+check out 12:00am , date: 11/05/2021
+
+[convenience facilities]
