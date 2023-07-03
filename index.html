@@ -5,9 +5,411 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/tab-icon.png" type="image/x-icon" />
     <title>Prime Car Rental</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    Home Page
+    <div>
+      <nav></nav>
+      <section></section>
+      <section></section>
+      <div></div>
+      <section></section>
+      <section class="pick-section">
+        <div class="container">
+          <div class="pick-container">
+            <div class="pick-container_title">
+              <h3>Vehicle Models</h3>
+              <h2>Our rental fleet</h2>
+              <p>
+                Choose from a variety of our amazing vehicles to rent for your
+                next adventure or business trip
+              </p>
+            </div>
+            <div class="pick-container_car-content">
+              <div class="pick-box">
+                <button class="btn1" onclick="showImage('audi'); show('car1')">Audi A1-Line</button>
+                <button class="btn2" onclick="showImage('vw'); show('car2')">VW Golf 6</button>
+                <button class="btn3" onclick="showImage('camry'); show('car3')">Toyota Camry</button>
+                <button class="btn4" onclick="showImage('bmw'); show('car4')">BMW 320 Modernline</button>
+                <button class="btn5" onclick="showImage('mercedes') ; show('car5')">Mercedes-Benz GLK</button>
+                <button class="btn6" onclick="showImage('vwcc'); show('car6')">VW Passat CC</button>
+              </div>
+              <div class="box-cars" id="image">
+                <div class="pick-car">
+                  <div id="img-group">
+                    <img
+                      id="audi"
+                      src="https://car-rental-ten.vercel.app/static/media/audia1.d038cf70b700e34e607a.jpg"
+                      alt="Audi A1 S-line"
+                    />
+                    <img
+                      id="vw"
+                      src="https://car-rental-ten.vercel.app/static/media/golf6.595c0bbfc7ce2e50aa05.jpg"
+                      alt="VW Golf 6"
+                      style="display: none"
+                    />
+                    <img
+                      id="camry"
+                      src="https://car-rental-ten.vercel.app/static/media/toyotacamry.3d493a56558c50b677cc.jpg"
+                      alt="Toyota Camry"
+                      style="display: none"
+                    />
+                    <img
+                      id="bmw"
+                      src="https://car-rental-ten.vercel.app/static/media/bmw320.84ab73b0c9133418f907.jpg"
+                      alt="BMW 320 ModernLine"
+                      style="display: none"
+                    />
+                    <img
+                      id="mercedes"
+                      src="https://car-rental-ten.vercel.app/static/media/benz.0a6153731a2c1a68054a.jpg"
+                      alt="Mercedes-benz GLK"
+                      style="display: none"
+                    />
+                    <img
+                      id="vwcc"
+                      src="https://car-rental-ten.vercel.app/static/media/passatcc.bd82bd1deac8c11e3c4d.jpg"
+                      alt="VW Passat CC"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+                <div class="pick-description" id="DiscriptionCar">
+                  <div>
+                   <div id="discription">
+                    <div class="pick-description-car" id="car1">
+                      <div class="pick-description_price">
+                        <span> $45</span>/ rent per day
+                      </div>
+                      <div class="pick-description_table">
+                        <div class="pick-description_table_col">
+                          <span>Model</span>
+                          <span> Audi</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span> Mark</span>
+                          <span>A1</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Year</span>
+                          <span>2012</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Doors</span>
+                          <span>4/5</span>
+                        </div class="pick-description_table_col">
+                        <div class="pick-description_table_col">
+                          <span>AC</span>
+                          <span>Yes</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Transmission</span>
+                          <span>Manual</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Fuel</span>
+                          <span>Gasoline</span>
+                        </div>
+                      </div class="pick-description_table_col">
+                      <a class="cta-btn" href="#booking-section">Reserve Now</a>
+                    </div>
+                    <div class="pick-description-car"style="display:none" id="car2">
+                      <div class="pick-description_price">
+                        <span> $37</span>/ rent per day
+                      </div>
+                      <div class="pick-description_table">
+                        <div class="pick-description_table_col">
+                          <span>Model</span>
+                          <span> Golf 6</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span> Mark</span>
+                          <span>Volkswagen</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Year</span>
+                          <span>2008</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Doors</span>
+                          <span>4/5</span>
+                        </div class="pick-description_table_col">
+                        <div class="pick-description_table_col">
+                          <span>AC</span>
+                          <span>Yes</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Transmission</span>
+                          <span>Manual</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Fuel</span>
+                          <span>Diesel</span>
+                        </div>
+                      </div class="pick-description_table_col">
+                      <a class="cta-btn" href="#booking-section">Reserve Now</a>
+                    </div>
+                    <div class="pick-description-car"style="display:none"id="car3">
+                      <div class="pick-description_price">
+                        <span> $30</span>/ rent per day
+                      </div>
+                      <div class="pick-description_table">
+                        <div class="pick-description_table_col">
+                          <span>Model</span>
+                          <span> Camry</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span> Mark</span>
+                          <span>Toyota</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Year</span>
+                          <span>2006</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Doors</span>
+                          <span>4/5</span>
+                        </div class="pick-description_table_col">
+                        <div class="pick-description_table_col">
+                          <span>AC</span>
+                          <span>Yes</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Transmission</span>
+                          <span>Automatic</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Fuel</span>
+                          <span>Hybrid</span>
+                        </div>
+                      </div class="pick-description-car">
+                      <a class="cta-btn" href="#booking-section">Reserve Now</a>
+                    </div>
+                    <div class="pick-description-car"style="display:none" id="car4">
+                      <div class="pick-description_price">
+                        <span> $35</span>/ rent per day
+                      </div>
+                      <div class="pick-description_table">
+                        <div class="pick-description_table_col">
+                          <span>Model</span>
+                          <span> 320</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span> Mark</span>
+                          <span>BMW</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Year</span>
+                          <span>2012</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Doors</span>
+                          <span>4/5</span>
+                        </div class="pick-description_table_col">
+                        <div class="pick-description_table_col">
+                          <span>AC</span>
+                          <span>Yes</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Transmission</span>
+                          <span>Manual</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Fuel</span>
+                          <span>Diesel</span>
+                        </div>
+                      </div class="pick-description_table_col">
+                      <a class="cta-btn" href="#booking-section">Reserve Now</a>
+                    </div>
+                    <div class="pick-description-car"style="display:none" id="car5">
+                      <div class="pick-description_price">
+                        <span> $50</span>/ rent per day
+                      </div>
+                      <div class="pick-description_table">
+                        <div class="pick-description_table_col">
+                          <span>Model</span>
+                          <span> Benz GLK </span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span> Mark</span>
+                          <span>Mercedes</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Year</span>
+                          <span>2006</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Doors</span>
+                          <span>4/5</span>
+                        </div class="pick-description_table_col">
+                        <div class="pick-description_table_col">
+                          <span>AC</span>
+                          <span>Yes</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Transmission</span>
+                          <span>Manual</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Fuel</span>
+                          <span>Diesel</span>
+                        </div>
+                      </div class="pick-description_table_col">
+                      <a class="cta-btn" href="#booking-section">Reserve Now</a>
+                    </div>
+                    <div class="pick-description-car"style="display:none" id="car6">
+                      <div class="pick-description_price">
+                        <span> $25</span>/ rent per day
+                      </div>
+                      <div class="pick-description_table">
+                        <div class="pick-description_table_col">
+                          <span>Model</span>
+                          <span> Passat CC </span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span> Mark</span>
+                          <span>Volkswagen</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Year</span>
+                          <span>2008</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Doors</span>
+                          <span>4/5</span>
+                        </div class="pick-description_table_col">
+                        <div class="pick-description_table_col">
+                          <span>AC</span>
+                          <span>Yes</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Transmission</span>
+                          <span>Automatic</span>
+                        </div>
+                        <div class="pick-description_table_col">
+                          <span>Fuel</span>
+                          <span>Gasoline</span>
+                        </div>
+                      </div class="pick-description_table_col">
+                      <a class="cta-btn" href="#booking-section">Reserve Now</a>
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner-section">
+        <div class="Container">
+          <div class="banner-content">
+            <div class="banner-section_text">
+              <h2 class="h2banner">Save Big with our cheap car rental!</h2>
+              <p class="pbanner">
+                Top Airports. Local Suppliers.
+                <span class="spanbanner">24/7</span>
+                Support
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose-section">
+        <div class="container">
+          <div class="choose-container">
+            <img src="images/cars/main-three-cars.png" alt="main-three-cars">
+            <div class="text-container">
+              <div class="text-container_left">
+                <h4>Why Choose Us</h4>
+                <h2 class="headchoose">Best value deals you will ever find</h2>
+                <p class="pchoose">
+                  Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.
+                </p>
+                <a href="#home">Find details &nbsp;
+                  
+                </a>
+              </div>
+              <div class="text-container_right">
+                <div class="flex-drive">
+                  <img src="images/Crossdrive.png"alt="crossdrive">
+                  <div class="text-container_right_box_text">
+                    <h4 class="h4_crossdrive">
+                      Cross country Drive
+                    </h4>
+                    <p class="p_Crossdrive">
+                      Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex-drive">
+                  <img src="images/Pricing.png"alt="Pricing">
+                  <div class="text-container_right_box_text">
+                    <h4 class="h4_pricing">
+                      All Inclusive Pricing
+                    </h4>
+                    <p class="p.Crossdrive">
+                      Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex-drive">
+                  <img src="images/charges.png"alt="charges">
+                  <div class="text-container_right_box_text">
+                    <h4 class="h4_charge">
+                      No Hidden Charges
+                    </h4>
+                    <p class="p_Crossdrive">
+                      Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.
+                    </p>
+                  </div>
+                </div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="testimonials-container">
+            <div class="testimonials-container_text">
+              <h4 class="h_testimonials">
+                Reviewed by People
+              </h4>
+              <h2 class="h2_testimonials">
+                Client's Testimonials
+              </h2>
+              <p class="p_testimonials">
+                Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.
+              </p>
+            </div>
+          </div>
+          <div class="all-testimonails">
+            <div class="all-testimonails_box">
+              <span class="quote-icon">
+                <img src="" alt="">
+              </span>
+              <p class="p-testimonialsbox"> "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "</p>
+              <div class="all-testimonails_box_name">
+                <div class="all-testimonails_box_name_profile">
+                  <img src="/images/users/harry-potter.jpg" alt="user_img">
+                </div>
+
+              </div>
+
+            </div>
+            <div class="all-testimonails_box box2">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <script src="Clickfunction.js"></script>
+      <footer></footer>
+    </div>
   </body>
 </html>
