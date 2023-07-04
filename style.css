@@ -176,6 +176,9 @@
   max-width: 1330px;
   padding: 0 25px;
 }
+.flex-drive {
+  gap: 20px;
+}
 .banner-content {
   align-items: center;
   color: white;
